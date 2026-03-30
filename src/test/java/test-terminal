@@ -1,0 +1,15 @@
+Створення студента
+curl -X POST http://localhost:9090/university/students \
+  -H "Content-Type: application/json" \
+  -d '{"firstName":"Ivan","lastName":"Petrov","email":"ivan@example.com","age":20}'
+
+ Отримання всіх студентів
+ curl http://localhost:9090/university/students
+
+ Отримання студента за id
+curl http://localhost:9090/university/students/1
+
+ Оновлення студента
+ curl -X PUT http://localhost:9090/university/students/1 \
+   -H "Content-Type: application/json" \
+   -d '{"firstName":"Ivan","lastName":"Sydorov","email":"ivan.s@example.com","age":21}'

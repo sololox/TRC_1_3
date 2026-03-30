@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Student Manager
+
+server:
+  port: 9090
+  servlet:
+    context-path: /university
+
+logging:
+  level:
+    com.university: DEBUG
